@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+                }
+        .card{
+            width: 300px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s eaase;
+        }
+        .cardimag{
+            width: 97%;
+            height: 200px;
+            position: relative;
+            top: 5px;
+            left: 5px;
+            border-radius: 15px;
+           
+            
+        }
+        .cardcon{
+            padding: 20px;
+        }
+        .tags{
+            margin-bottom: 10px;
+        }
+        .tag{
+            display: inline-block;
+            background-color: #e0e0e0;
+            color: #333;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-right: 5px;
+        }
+        .title{
+            margin: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .des{
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .read_more{
+            padding: 10px 20px;
+            border: none;
+            background: linear-gradient(to right,#a1c4fd, #c2e9fb);
+            border-radius: 25px;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+             <img src="https://th.bing.com/th/id/OIP.LU-dDFs-fDj2fMAq53vIMwHaE8?rs=1&pid=ImgDetMain" alt="Royel Enfield" class="cardimag">
+             <div class="cardcon">
+                <div class="tags">
+                    <span class="tag">Price</span>
+                    <span class="tag">Model</span>
+                </div>
+                <h2 class="title">Royel Enfield Details</h2>
+                <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur rem ipsum odio consectetur pariatur ut deserunt, quia minus nam, fuga, sapiente commodi odit. Accusantium officiis blanditiis molestias expedita illo.</p>
+                <button class="read_more">Read More</button>
+             </div>
+    </div>
+</body>
+</html>

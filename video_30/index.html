@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Veriable</title>
+    <style>
+        :root{
+            --color:rgb(234, 131, 227);
+            --seccolor:rgb(120, 161, 208);
+            --defpading:23px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color)
+        }
+        .con{
+            background-color: var(--seccolor)
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            /* padding: 34px; */
+            padding: var(--defpading);
+            border: 2px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color:rgb(12, 186, 32);
+            background-color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="con">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perspiciatis nesciunt molestiae tenetur totam quam ex dicta, fugiat quibusdam maxime vero magnam qui, dolores nam. Deserunt repellat quod error mollitia. Beatae sunt, aut consequatur fugiat quos non corporis tenetur totam aperiam velit eaque itaque accusamus?
+    </div>
+</body>
+</html>
